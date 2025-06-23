@@ -1,5 +1,5 @@
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Tactics.Injection.
+From ExtLib Require Import Core.RelDec.
+From ExtLib Require Import Tactics.Injection.
 
 Set Printing Universes.
 Set Primitive Projections.

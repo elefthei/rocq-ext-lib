@@ -1,8 +1,8 @@
-Require Import Coq.Lists.List.
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Structures.Maps.
-Require Import ExtLib.Structures.Monads.
-Require Import ExtLib.Structures.Reducible.
+Require Import Stdlib.Lists.List.
+From ExtLib Require Import RelDec.
+From ExtLib Require Import Structures.Maps.
+From ExtLib Require Import Structures.Monads.
+From ExtLib Require Import Structures.Reducible.
 
 Set Implicit Arguments.
 Set Strict Implicit.

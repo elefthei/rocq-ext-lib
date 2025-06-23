@@ -1,5 +1,5 @@
-Require Import ExtLib.Structures.Monad.
-Require Import ExtLib.Structures.MonadTrans.
+From ExtLib Require Import Structures.Monad.
+From ExtLib Require Import Structures.MonadTrans.
 
 Set Implicit Arguments.
 Set Contextual Implicit.

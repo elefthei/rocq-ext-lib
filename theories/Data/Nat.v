@@ -1,8 +1,8 @@
-From Coq.Arith Require Arith.
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Structures.Monoid.
-Require Import ExtLib.Tactics.Consider.
-Require Import ExtLib.Tactics.Injection.
+From Stdlib Require Import Arith.
+From ExtLib Require Import Core.RelDec.
+From ExtLib Require Import Structures.Monoid.
+From ExtLib Require Import Tactics.Consider.
+From ExtLib Require Import Tactics.Injection.
 
 Set Implicit Arguments.
 Set Strict Implicit.

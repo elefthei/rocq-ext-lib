@@ -1,8 +1,8 @@
-Require Import List.
-Require Import ExtLib.Structures.Sets.
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Data.List.
-Require Import ExtLib.Structures.Reducible.
+From Stdlib Require Import List.
+From ExtLib Require Import Structures.Sets.
+From ExtLib Require Import Core.RelDec.
+From ExtLib Require Import Data.List.
+From ExtLib Require Import Structures.Reducible.
 
 Set Implicit Arguments.
 Set Strict Implicit.
@@ -62,7 +62,7 @@ Global Instance Foldable_listset {T}
   : Foldable (lset T) T :=
   fun _ f a t => List.fold_left (fun x y => f y x) t a.
 
-Require Import ExtLib.Structures.Functor.
+From ExtLib Require Import Structures.Functor.
 
 Global Instance Functor_listset : Functor lset :=
 { fmap := map }.

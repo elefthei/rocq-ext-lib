@@ -1,5 +1,5 @@
-Require Import ExtLib.Structures.Monads.
-Require Import BinPos.
+From ExtLib Require Import Structures.Monads.
+From Stdlib Require Import BinPos.
 
 Set Implicit Arguments.
 Set Strict Implicit.
@@ -50,7 +50,7 @@ Section gfix.
 End gfix.
 
 (** Demo
-Require Import ExtLib.Data.Monads.IdentityMonad.
+From ExtLib Require Import ata.Monads.IdentityMonad.
 Definition foo : nat -> GFix ident nat :=
   mfix (fun recur n => 
     match n with

@@ -1,6 +1,6 @@
-Require Import Equivalence.
+From Stdlib Require Import Equivalence.
 
-Require Import ExtLib.Core.RelDec.
+From ExtLib Require Import RelDec.
 
 Class Eqv T := eqv : T -> T -> Prop.
 Definition neg_eqv {T} {E:Eqv T} (x:T) (y:T) : Prop := not (eqv x y).

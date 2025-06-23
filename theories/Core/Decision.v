@@ -1,4 +1,4 @@
-From Coq.Classes Require Import DecidableClass.
+From Stdlib.Classes Require Import DecidableClass.
 
 Definition decideP (P : Prop) {D : Decidable P} : {P} + {~P} :=
   match @Decidable_witness P D as X return (X = true -> P) -> (X = false -> ~P) -> {P} + {~P} with

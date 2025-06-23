@@ -85,7 +85,7 @@ Section boolean_logic.
 
 End boolean_logic.
 
-Require Import ExtLib.Core.RelDec.
+From ExtLib Require Import Core.RelDec.
 
 Section from_rel_dec.
   Variable T : Type.

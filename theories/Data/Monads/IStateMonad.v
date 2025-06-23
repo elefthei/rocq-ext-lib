@@ -1,4 +1,4 @@
-Require Import ExtLib.Structures.IXMonad.
+From ExtLib Require Import Structures.IXMonad.
 
 Set Implicit Arguments.
 Set Strict Implicit.

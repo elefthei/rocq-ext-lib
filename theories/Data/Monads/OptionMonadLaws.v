@@ -1,10 +1,9 @@
-Require Import RelationClasses.
-Require Import Setoid.
-Require Import ExtLib.Data.Fun.
-Require Import ExtLib.Structures.Monads.
-Require Import ExtLib.Structures.MonadLaws.
-Require Import ExtLib.Data.Option.
-Require Import ExtLib.Data.Monads.OptionMonad.
+From Stdlib Require Import RelationClasses.
+From Stdlib Require Import Setoid.
+From ExtLib Require Import Data.Fun.
+From ExtLib Require Import Structures.Monads.
+From ExtLib Require Import Structures.MonadLaws.
+From ExtLib Require Import Data.Monads.OptionMonad.
 
 Set Implicit Arguments.
 Set Strict Implicit.

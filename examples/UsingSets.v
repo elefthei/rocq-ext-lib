@@ -1,7 +1,7 @@
-Require Import Coq.Bool.Bool.
-Require Import ExtLib.Structures.Sets.
-Require Import ExtLib.Structures.Reducible.
-Require Import ExtLib.Structures.Functor.
+From Stdlib Require Import Bool.Bool.
+From ExtLib Require Import Structures.Sets.
+From ExtLib Require Import Structures.Reducible.
+From ExtLib Require Import Structures.Functor.
 
 Set Implicit Arguments.
 Set Strict Implicit.
@@ -24,8 +24,7 @@ Section with_set.
 End with_set.
 
 (** Instantiate the set **)
-Require Import ExtLib.Data.Set.ListSet.
-Require Import ExtLib.ExtLib.
+From ExtLib Require Import Data.Set.ListSet.
 
 Eval compute in contains_both 0 1 empty.
 

@@ -1,6 +1,6 @@
-Require Import ExtLib.Structures.Monad.
-Require Import ExtLib.Structures.CoMonad.
-Require Import ExtLib.Structures.Functor.
+From ExtLib Require Import Structures.Monad.
+From ExtLib Require Import Structures.CoMonad.
+From ExtLib Require Import Structures.Functor.
 
 Set Implicit Arguments.
 Set Strict Implicit.

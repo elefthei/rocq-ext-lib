@@ -1,5 +1,5 @@
-Require Import Coq.PArith.BinPos.
-Require Import ExtLib.Core.RelDec.
+From Stdlib Require Import PArith.BinPos.
+From ExtLib Require Import Core.RelDec.
 
 Set Implicit Arguments.
 Set Strict Implicit.
@@ -54,4 +54,4 @@ Proof.
   intuition; [ apply Pos.le_ge | apply Pos.ge_le ]; auto.
 Qed.
 
-Export Coq.PArith.BinPos.
+Export Stdlib.PArith.BinPos.

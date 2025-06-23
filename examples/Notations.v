@@ -1,4 +1,4 @@
-Require Import ExtLib.Structures.Monad.
+From ExtLib Require Import Structures.Monad.
 Generalizable All Variables.
 
 Module NotationExample.

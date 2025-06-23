@@ -1,8 +1,8 @@
 Require Import List.
 Require Import String.
 
-Require Import ExtLib.Structures.Monads.
-Require Import ExtLib.Core.RelDec.
+From ExtLib Require Import Structures.Monads.
+From ExtLib Require Import RelDec.
 (*Require Import Injection. *)
 
 Open Scope string_scope.

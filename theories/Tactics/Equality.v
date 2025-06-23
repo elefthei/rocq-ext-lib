@@ -1,4 +1,4 @@
-Require Import ExtLib.Data.Eq.
+From ExtLib Require Import Data.Eq.
 
 Ltac eq_rw_goal :=
   autorewrite with eq_rw.

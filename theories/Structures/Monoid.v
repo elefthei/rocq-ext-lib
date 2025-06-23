@@ -1,4 +1,4 @@
-Require Import ExtLib.Structures.BinOps.
+From ExtLib Require Import Structures.BinOps.
 
 Set Implicit Arguments.
 Set Maximal Implicit Insertion.

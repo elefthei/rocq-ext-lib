@@ -1,12 +1,12 @@
-From Coq Require Import List PeanoNat.
-Require Import Relations RelationClasses.
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Data.SigT.
-Require Import ExtLib.Data.Member.
-Require Import ExtLib.Data.ListNth.
-Require Import ExtLib.Data.Option.
-Require Import ExtLib.Tactics.
-Require Import Coq.Classes.Morphisms.
+From Stdlib Require Import List PeanoNat.
+From Stdlib Require Import Relations RelationClasses.
+From ExtLib Require Import Core.RelDec.
+From ExtLib Require Import Data.SigT.
+From ExtLib Require Import Data.Member.
+From ExtLib Require Import Data.ListNth.
+From ExtLib Require Import Data.Option.
+From ExtLib Require Import Tactics.
+From Stdlib Require Import Classes.Morphisms.
 
 Set Implicit Arguments.
 Set Strict Implicit.

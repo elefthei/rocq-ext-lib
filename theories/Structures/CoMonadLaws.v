@@ -1,5 +1,5 @@
-Require Import Coq.Program.Basics.
-Require Import ExtLib.Structures.CoMonad.
+From Stdlib Require Import Program.Basics.
+From ExtLib Require Import Structures.CoMonad.
 
 Set Implicit Arguments.
 Set Strict Implicit.

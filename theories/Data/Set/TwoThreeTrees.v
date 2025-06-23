@@ -1,6 +1,6 @@
-Require Import ExtLib.Structures.Monads.
-Require Import ExtLib.Data.Monads.OptionMonad.
-Require Import ExtLib.Programming.Extras.
+From ExtLib Require Import Structures.Monads.
+From ExtLib Require Import Data.Monads.OptionMonad.
+From ExtLib Require Import Programming.Extras.
 Import FunNotation.
 
 Set Implicit Arguments.

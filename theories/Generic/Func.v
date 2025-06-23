@@ -1,5 +1,5 @@
-Require Import Coq.Lists.List.
-Require Import ExtLib.Data.Member.
+From Stdlib Require Import Lists.List.
+From ExtLib Require Import Data.Member.
 
 Fixpoint asFunc (domain : list Type) (range : Type) : Type :=
   match domain with

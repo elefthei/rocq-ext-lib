@@ -1,7 +1,7 @@
-Require Import Coq.Strings.Ascii.
-Require Import ExtLib.Data.Bool.
-Require Import ExtLib.Tactics.Consider.
-Require Import ExtLib.Core.RelDec.
+From Stdlib Require Import Strings.Ascii.
+From ExtLib Require Import Data.Bool.
+From ExtLib Require Import Tactics.Consider.
+From ExtLib Require Import Core.RelDec.
 
 Set Implicit Arguments.
 Set Strict Implicit.

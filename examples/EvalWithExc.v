@@ -1,10 +1,10 @@
-Require Import Coq.Strings.String.
+From Stdlib Require Import Strings.String.
 (** Require the monad definitions **)
-Require Import ExtLib.Structures.Monads.
+From ExtLib Require Import Structures.Monads.
 (** Use the instances for exceptions **)
-Require Import ExtLib.Data.Monads.EitherMonad.
+From ExtLib Require Import Data.Monads.EitherMonad.
 (** Strings will be used for error messages **)
-Require Import ExtLib.Data.String.
+From ExtLib Require Import Data.String.
 
 Set Implicit Arguments.
 Set Strict Implicit.

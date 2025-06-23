@@ -1,6 +1,6 @@
-Require Import Coq.Classes.RelationClasses.
-Require Import ExtLib.Structures.BinOps.
-Require Import ExtLib.Structures.Monad.
+From Stdlib Require Import Classes.RelationClasses.
+From ExtLib Require Import Structures.BinOps.
+From ExtLib Require Import Structures.Monad.
 
 Set Implicit Arguments.
 Set Strict Implicit.

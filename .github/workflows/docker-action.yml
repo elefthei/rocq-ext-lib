@@ -17,18 +17,7 @@ jobs:
     strategy:
       matrix:
         image:
-          - 'coqorg/coq:8.9'
-          - 'coqorg/coq:8.11'
-          - 'coqorg/coq:8.12-ocaml-4.10-flambda'
-          - 'coqorg/coq:8.13'
-          - 'coqorg/coq:8.14'
-          - 'coqorg/coq:8.15'
-          - 'coqorg/coq:8.16'
-          - 'coqorg/coq:8.17'
-          - 'coqorg/coq:8.18'
-          - 'coqorg/coq:8.19'
-          - 'coqorg/coq:8.20'
-          - 'coqorg/coq:dev'
+          - 'rocq/rocq-prover:9.0'
       fail-fast: false
     steps:
       - uses: actions/checkout@v4
@@ -36,7 +25,7 @@ jobs:
           submodules: recursive
       - uses: coq-community/docker-coq-action@v1
         with:
-          opam_file: 'coq-ext-lib.opam'
+          opam_file: 'rocq-ext-lib.opam'
           custom_image: ${{ matrix.image }}
           before_install: |
             startGroup "Setup and print opam config"
@@ -46,7 +35,7 @@ jobs:
           after_script: |
             startGroup "Test dependants"
               PINS=$(opam list -s --pinned --columns=package | xargs | tr ' ' ,)
-              PACKAGES=`opam list -s --depends-on coq-ext-lib --coinstallable-with $PINS`
+              PACKAGES=`opam list -s --depends-on rocq-ext-lib --coinstallable-with $PINS`
               for PACKAGE in $PACKAGES
               do DEPS_FAILED=false
                  opam install -y --deps-only $PACKAGE || DEPS_FAILED=true
@@ -60,7 +49,7 @@ jobs:
             endGroup
           before_script: |
             startGroup "Workaround permission issue"
-              sudo chown -R coq:coq .
+              sudo chown -R rocq:rocq .
             endGroup
           export: 'OPAMWITHTEST OPAMCONFIRMLEVEL'
         env:

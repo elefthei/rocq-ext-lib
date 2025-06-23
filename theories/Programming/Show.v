@@ -1,15 +1,15 @@
-From Coq Require Ascii.
-From Coq Require Import String.
-From Coq.Program Require Import Wf.
-From Coq Require Import BinPos.
-From Coq Require Import ZArith.
-Require Import ExtLib.Structures.Monoid.
-Require Import ExtLib.Structures.Reducible.
-Require Import ExtLib.Programming.Injection.
-Require Import ExtLib.Data.Char.
-Require Import ExtLib.Data.String.
-Require Import ExtLib.Data.Fun.
-Require Import ExtLib.Core.RelDec.
+From Stdlib Require Ascii.
+From Stdlib Require Import String.
+From Stdlib Require Import Program.Wf.
+From Stdlib Require Import BinPos.
+From Stdlib Require Import ZArith.
+From ExtLib Require Import Structures.Monoid.
+From ExtLib Require Import Structures.Reducible.
+From ExtLib Require Import Programming.Injection.
+From ExtLib Require Import Data.Char.
+From ExtLib Require Import Data.String.
+From ExtLib Require Import Data.Fun.
+From ExtLib Require Import RelDec.
 
 Set Implicit Arguments.
 Set Strict Implicit.
@@ -60,6 +60,7 @@ Fixpoint show_exact (s : string) : showM :=
   end.
 
 Module ShowNotation.
+  Declare Scope show_scope.
   Delimit Scope show_scope with show.
 
   Notation "x << y" := (cat x%show y%show) (at level 100) : show_scope.

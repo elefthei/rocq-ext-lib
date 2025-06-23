@@ -1,8 +1,8 @@
 (** Numbers up to @n@ **)
-Require Coq.Lists.List.
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Tactics.EqDep.
-Require Import ExtLib.Tactics.Injection.
+From Stdlib Require Import Lists.List.
+From ExtLib Require Import Core.RelDec.
+From ExtLib Require Import Tactics.EqDep.
+From ExtLib Require Import Tactics.Injection.
 
 Set Implicit Arguments.
 Set Strict Implicit.
@@ -100,7 +100,7 @@ Proof.
   intro. destruct (fin_case y) ; subst.
   intuition.
   destruct H ; subst.
-  intuition ; try congruence. 
+  intuition ; try congruence.
 (*  inversion H.*)
   intro ; destruct (fin_case y) ; subst ; simpl.
   intuition ; try congruence.

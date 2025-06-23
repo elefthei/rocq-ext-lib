@@ -1,4 +1,4 @@
-Require Import ExtLib.Data.Fin.
+From ExtLib Require Import Data.Fin.
 
 Set Implicit Arguments.
 Set Strict Implicit.

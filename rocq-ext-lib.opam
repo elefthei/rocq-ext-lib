@@ -5,21 +5,21 @@ opam-version: "2.0"
 maintainer: "gmalecha@gmail.com"
 version: "dev"
 
-homepage: "https://github.com/coq-community/coq-ext-lib"
-dev-repo: "git+https://github.com/coq-community/coq-ext-lib.git"
-bug-reports: "https://github.com/coq-community/coq-ext-lib/issues"
-doc: "https://coq-community.github.io/coq-ext-lib/"
+homepage: "https://github.com/rocq-community/rocq-ext-lib"
+dev-repo: "git+https://github.com/rocq-community/rocq-ext-lib.git"
+bug-reports: "https://github.com/rocq-community/rocq-ext-lib/issues"
+doc: "https://rocq-community.github.io/rocq-ext-lib/"
 license: "BSD-2-Clause"
 
-synopsis: "A library of Coq definitions, theorems, and tactics"
+synopsis: "A library of Rocq definitions, theorems, and tactics"
 description: """
-A collection of theories and plugins that may be useful in other Coq developments."""
+A collection of theories and plugins that may be useful in other Rocq developments."""
 
 build: [make "-j%{jobs}%" "theories"]
 run-test: [make "-j%{jobs}%" "examples"]
 install: [make "install"]
 depends: [
-  "coq" { >= "8.9" < "8.10" | >= "8.11" }
+  "coq" { >= "9.0" }
 ]
 
 tags: [

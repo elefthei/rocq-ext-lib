@@ -1,8 +1,8 @@
-Require Import Coq.Relations.Relation_Definitions.
-Require Import Coq.Classes.RelationClasses.
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Tactics.Consider.
-Require Import ExtLib.Tactics.Injection.
+From Stdlib Require Import Relations.Relation_Definitions.
+From Stdlib Require Import Classes.RelationClasses.
+From ExtLib Require Import Core.RelDec.
+From ExtLib Require Import Tactics.Consider.
+From ExtLib Require Import Tactics.Injection.
 
 Set Implicit Arguments.
 Set Strict Implicit.

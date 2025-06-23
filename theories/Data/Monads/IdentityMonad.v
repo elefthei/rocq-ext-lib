@@ -1,4 +1,4 @@
-Require Import ExtLib.Structures.Monad.
+From ExtLib Require Import Structures.Monad.
 
 Set Implicit Arguments.
 Set Maximal Implicit Insertion.

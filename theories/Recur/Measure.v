@@ -1,5 +1,5 @@
-From Coq.Classes Require Import RelationClasses.
-From Coq.Arith Require Wf_nat.
+From Stdlib Require Import Classes.RelationClasses.
+From Stdlib Require Import Arith.Wf_nat.
 
 Set Implicit Arguments.
 Set Strict Implicit.

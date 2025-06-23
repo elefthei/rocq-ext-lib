@@ -1,6 +1,5 @@
-(** The Cont Monad Class
- **)
-Require Import ExtLib.Structures.Monad.
+(** The Cont Monad Class **)
+From ExtLib Require Import Structures.Monad.
 
 Class Cont (m : Type -> Type) : Type :=
 { callCC : forall a b, ((a -> m b) -> m a) -> m a }.

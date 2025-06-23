@@ -1,9 +1,9 @@
-Require Import Coq.Strings.String.
-Require Import ExtLib.Structures.MonadWriter.
-Require Import ExtLib.Data.PPair.
-Require Import ExtLib.Data.Monads.WriterMonad.
-Require Import ExtLib.Data.Monads.IdentityMonad.
-Require Import ExtLib.Programming.Show.
+From Stdlib Require Import Strings.String.
+From ExtLib Require Import Structures.MonadWriter.
+From ExtLib Require Import Data.PPair.
+From ExtLib Require Import Data.Monads.WriterMonad.
+From ExtLib Require Import Data.Monads.IdentityMonad.
+From ExtLib Require Import Programming.Show.
 
 Definition PrinterMonad : Type -> Type :=
   writerT (@show_mon _ ShowScheme_string_compose) ident.

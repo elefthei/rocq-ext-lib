@@ -1,5 +1,5 @@
-From Coq Require Import List String.
-Require Import ExtLib.Structures.CoMonad.
+From Stdlib Require Import List String.
+From ExtLib Require Import Structures.CoMonad.
 
 Set Implicit Arguments.
 Set Strict Implicit.
@@ -94,9 +94,9 @@ Global Instance Data_list {A} : Data (list A) :=
 }.
 
 (** Example of deriving Show from Data **)
-Require Import ExtLib.Programming.Show.
-Require Import ExtLib.Data.Monads.IdentityMonad.
-Require Import ExtLib.Structures.Monads.
+From ExtLib Require Import Programming.Show.
+From ExtLib Require Import Data.Monads.IdentityMonad.
+From ExtLib Require Import Structures.Monads.
 
 Global Instance Comoand_Id : CoMonad id :=
 { extract := fun _ x => x

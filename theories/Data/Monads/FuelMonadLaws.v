@@ -1,10 +1,10 @@
-Require Import RelationClasses.
-Require Import Setoid.
-Require Import ExtLib.Tactics.Consider.
-Require Import ExtLib.Data.Fun.
-Require Import ExtLib.Structures.Monads.
-Require Import ExtLib.Structures.MonadLaws.
-Require Import ExtLib.Data.Monads.FuelMonad.
+From Stdlib Require Import RelationClasses.
+From Stdlib Require Import Setoid.
+From ExtLib Require Import Tactics.Consider.
+From ExtLib Require Import Data.Fun.
+From ExtLib Require Import Structures.Monads.
+From ExtLib Require Import Structures.MonadLaws.
+From ExtLib Require Import Data.Monads.FuelMonad.
 
 Set Implicit Arguments.
 Set Strict Implicit.
@@ -87,7 +87,7 @@ Section Laws.
     Qed.
   End with_T.
 
-  Require Import ExtLib.Tactics.TypeTac.
+  From ExtLib Require Import actics.TypeTac.
 
   Global Instance MonadLaws_GFix : MonadLaws Monad_GFix (@type_GFix).
   Proof.

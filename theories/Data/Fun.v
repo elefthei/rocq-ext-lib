@@ -1,8 +1,8 @@
-Require Import ExtLib.Data.PreFun.
-Require Import ExtLib.Structures.Functor.
-Require Import ExtLib.Structures.Applicative.
-Require Import ExtLib.Structures.CoFunctor.
-Require Import ExtLib.Structures.Monoid.
+From ExtLib Require Import Data.PreFun.
+From ExtLib Require Import Structures.Functor.
+From ExtLib Require Import Structures.Applicative.
+From ExtLib Require Import Structures.CoFunctor.
+From ExtLib Require Import Structures.Monoid.
 
 Set Implicit Arguments.
 Set Strict Implicit.

@@ -1,4 +1,4 @@
-Require Import ExtLib.Structures.Monoid.
+From ExtLib Require Import Structures.Monoid.
 
 Set Implicit Arguments.
 Set Strict Implicit.

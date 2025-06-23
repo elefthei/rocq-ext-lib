@@ -1,4 +1,4 @@
-Require Import ExtLib.Tactics.Consider.
+From ExtLib Require Import Tactics.Consider.
 
 Set Implicit Arguments.
 Set Strict Implicit.

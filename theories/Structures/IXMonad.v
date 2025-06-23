@@ -1,5 +1,5 @@
-Require Import ExtLib.Structures.Monad.
-Import Applicative. 
+From ExtLib Require Import Structures.Monad.
+Import Applicative.
 
 Set Implicit Arguments.
 Set Strict Implicit.
@@ -11,6 +11,7 @@ Polymorphic Class IxMonad@{d c} (m : Type@{d} -> Type@{d} -> Type@{c} -> Type@{c
 
 Module IxMonadNotation.
 
+  Declare Scope ixmonad_scope.
   Delimit Scope ixmonad_scope with ixmonad.
 
   Notation "c >>= f" := (@bind _ _ _ _ _ _ _ c f) (at level 50, left associativity) : ixmonad_scope.

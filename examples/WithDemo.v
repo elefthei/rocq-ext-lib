@@ -1,5 +1,5 @@
-Require Import List.
-Require Import ExtLib.Programming.With.
+From Stdlib Require Import List.
+From ExtLib Require Import Programming.With.
 
 Record RTest : Set := mkRTest {
   a : bool ; b : nat ; c : bool

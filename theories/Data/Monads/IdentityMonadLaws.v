@@ -1,9 +1,9 @@
-Require Import Coq.Classes.RelationClasses.
-Require Import Setoid.
-Require Import ExtLib.Data.Fun.
-Require Import ExtLib.Structures.Monads.
-Require Import ExtLib.Structures.MonadLaws.
-Require Import ExtLib.Data.Monads.IdentityMonad.
+From Stdlib Require Import Classes.RelationClasses.
+From Stdlib Require Import Setoid.
+From ExtLib Require Import Data.Fun.
+From ExtLib Require Import Structures.Monads.
+From ExtLib Require Import Structures.MonadLaws.
+From ExtLib Require Import Data.Monads.IdentityMonad.
 
 Set Implicit Arguments.
 Set Strict Implicit.
@@ -49,7 +49,7 @@ Proof.
 Qed.
 *)
 
-Require Import ExtLib.Tactics.TypeTac.
+From ExtLib Require Import actics.TypeTac.
 
 Global Instance MonadLaws_GFix : MonadLaws Monad_ident (@type_ident).
 Proof.

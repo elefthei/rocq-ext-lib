@@ -1,11 +1,11 @@
-From Coq Require Import String Program PeanoNat.
+From Stdlib Require Import String Program PeanoNat.
 
-Require Import ExtLib.Tactics.Consider.
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Structures.Reducible.
-Require Import ExtLib.Structures.Monoid.
-Require Import ExtLib.Data.Char.
-Require Import ExtLib.Data.Nat.
+From ExtLib Require Import Tactics.Consider.
+From ExtLib Require Import Core.RelDec.
+From ExtLib Require Import Structures.Reducible.
+From ExtLib Require Import Structures.Monoid.
+From ExtLib Require Import Data.Char.
+From ExtLib Require Import Data.Nat.
 
 Set Implicit Arguments.
 Set Strict Implicit.

@@ -1,5 +1,5 @@
-Require Import String List.
-Require Import ExtLib.Data.HList.
+From Stdlib Require Import String List.
+From ExtLib Require Import Data.HList.
 
 Set Implicit Arguments.
 Set Strict Implicit.

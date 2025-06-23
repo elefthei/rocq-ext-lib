@@ -1,6 +1,6 @@
-From Coq.Classes Require Import EquivDec.
-Require Import ExtLib.Structures.EqDep.
-From Coq.Logic Require Eqdep_dec.
+From Stdlib Require Import Classes.EquivDec.
+From ExtLib Require Import Structures.EqDep.
+From Stdlib Require Import Logic.Eqdep_dec.
 
 Set Implicit Arguments.
 Set Strict Implicit.

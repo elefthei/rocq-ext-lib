@@ -1,4 +1,4 @@
-Require Import ExtLib.Core.Any.
+From ExtLib Require Import Core.Any.
 
 Set Implicit Arguments.
 Set Strict Implicit.

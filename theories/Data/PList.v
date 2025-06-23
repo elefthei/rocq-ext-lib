@@ -1,12 +1,12 @@
-Require Import ExtLib.Structures.Functor.
-Require Import ExtLib.Structures.Applicative.
-Require Import ExtLib.Data.POption.
-Require Import ExtLib.Data.PPair.
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Tactics.Consider.
-Require Import ExtLib.Tactics.Injection.
+From ExtLib Require Import Structures.Functor.
+From ExtLib Require Import Structures.Applicative.
+From ExtLib Require Import Data.POption.
+From ExtLib Require Import Data.PPair.
+From ExtLib Require Import RelDec.
+From ExtLib Require Import Tactics.Consider.
+From ExtLib Require Import Tactics.Injection.
 
-Require Import Coq.Bool.Bool.
+Require Import Stdlib.Bool.Bool.
 
 Set Universe Polymorphism.
 Set Primitive Projections.

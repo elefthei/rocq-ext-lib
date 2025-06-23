@@ -1,15 +1,15 @@
-Require Import Coq.Relations.Relation_Definitions.
-Require Import Coq.Classes.RelationClasses.
-Require Import Coq.Classes.Morphisms.
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Structures.Reducible.
-Require Import ExtLib.Structures.Traversable.
-Require Import ExtLib.Structures.Applicative.
-Require Import ExtLib.Structures.Functor.
-Require Import ExtLib.Structures.FunctorLaws.
-Require Import ExtLib.Data.Fun.
-Require Import ExtLib.Tactics.Injection.
-Require Import ExtLib.Tactics.Consider.
+From Stdlib Require Import Relations.Relation_Definitions.
+From Stdlib Require Import Classes.RelationClasses.
+From Stdlib Require Import Classes.Morphisms.
+From ExtLib Require Import Core.RelDec.
+From ExtLib Require Import Structures.Reducible.
+From ExtLib Require Import Structures.Traversable.
+From ExtLib Require Import Structures.Applicative.
+From ExtLib Require Import Structures.Functor.
+From ExtLib Require Import Structures.FunctorLaws.
+From ExtLib Require Import Data.Fun.
+From ExtLib Require Import Tactics.Injection.
+From ExtLib Require Import Tactics.Consider.
 
 Set Implicit Arguments.
 Set Strict Implicit.

@@ -1,6 +1,6 @@
-Require Import Coq.Bool.Bool.
-Require Import Coq.Classes.RelationClasses.
-Require Coq.Setoids.Setoid.
+Require Import Stdlib.Bool.Bool.
+Require Import Stdlib.Classes.RelationClasses.
+Require Stdlib.Setoids.Setoid.
 
 Set Implicit Arguments.
 Set Strict Implicit.

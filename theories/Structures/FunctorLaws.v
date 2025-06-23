@@ -1,6 +1,6 @@
-From Coq.Relations Require Import Relations.
-Require Import ExtLib.Data.Fun.
-Require Import ExtLib.Structures.Functor.
+From Stdlib Require Import Relations.
+From ExtLib Require Import Data.Fun.
+From ExtLib Require Import Structures.Functor.
 
 Set Implicit Arguments.
 Set Strict Implicit.

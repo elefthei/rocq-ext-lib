@@ -1,4 +1,4 @@
-Require Import ExtLib.Relations.TransitiveClosure.
+From ExtLib Require Import Relations.TransitiveClosure.
 
 Set Implicit Arguments.
 Set Strict Implicit.

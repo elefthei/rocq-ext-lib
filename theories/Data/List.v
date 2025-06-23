@@ -1,10 +1,10 @@
-From Coq Require Import List EquivDec.
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Structures.Monoid.
-Require Import ExtLib.Structures.Reducible.
-Require ExtLib.Data.Nat.
-Require Import ExtLib.Tactics.Consider.
-Require Import ExtLib.Tactics.Injection.
+From Stdlib Require Import List EquivDec.
+From ExtLib Require Import RelDec.
+From ExtLib Require Import Structures.Monoid.
+From ExtLib Require Import Structures.Reducible.
+From ExtLib Require Import Data.Nat.
+From ExtLib Require Import Tactics.Consider.
+From ExtLib Require Import Tactics.Injection.
 
 Set Implicit Arguments.
 Set Strict Implicit.
@@ -95,10 +95,10 @@ Qed.
 Global Instance Foldable_list@{u} {T : Type@{u}} : Foldable (list T) T :=
   fun _ f x ls => fold_right f x ls.
 
-Require Import ExtLib.Structures.Traversable.
-Require Import ExtLib.Structures.Functor.
-Require Import ExtLib.Structures.Monads.
-Require Import ExtLib.Structures.Applicative.
+From ExtLib Require Import Structures.Traversable.
+From ExtLib Require Import Structures.Functor.
+From ExtLib Require Import Structures.Monads.
+From ExtLib Require Import Structures.Applicative.
 
 Section traversable.
   Universe u v vF.

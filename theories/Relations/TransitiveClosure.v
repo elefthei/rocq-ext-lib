@@ -1,5 +1,5 @@
-Require Import Coq.Classes.RelationClasses.
-Require Import Coq.Setoids.Setoid.
+From Stdlib Require Import Classes.RelationClasses.
+From Stdlib Require Import Setoid.
 
 Set Implicit Arguments.
 Set Strict Implicit.

@@ -25,7 +25,7 @@ uninstall:
 	$(MAKE) -f $(COQMAKEFILE) uninstall
 
 dist:
-	@ git archive --prefix coq-ext-lib/ HEAD -o $(PROJECT_NAME).tgz
+	@ git archive --prefix rocq-ext-lib/ HEAD -o $(PROJECT_NAME).tgz
 
 .PHONY: all clean dist theories examples html
 
@@ -39,4 +39,4 @@ resources/index.md: meta.yml $(TEMPLATES)/index.md.mustache
 
 publish%:
 	opam publish --packages-directory=released/packages \
-		--repo=coq/opam --tag=v$* -v $* coq-community/coq-ext-lib
+		--repo=rocq-prover/opam --tag=v$* -v $* rocq-community/rocq-ext-lib

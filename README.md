@@ -2,7 +2,7 @@
 This file was generated from `meta.yml`, please do not edit manually.
 Follow the instructions on https://github.com/coq-community/templates to regenerate.
 --->
-# coq-ext-lib
+# rocq-ext-lib
 
 [![Docker CI][docker-action-shield]][docker-action-link]
 [![Contributing][contributing-shield]][contributing-link]
@@ -10,8 +10,8 @@ Follow the instructions on https://github.com/coq-community/templates to regener
 [![Zulip][zulip-shield]][zulip-link]
 [![coqdoc][coqdoc-shield]][coqdoc-link]
 
-[docker-action-shield]: https://github.com/coq-community/coq-ext-lib/actions/workflows/docker-action.yml/badge.svg?branch=master
-[docker-action-link]: https://github.com/coq-community/coq-ext-lib/actions/workflows/docker-action.yml
+[docker-action-shield]: https://github.com/rocq-community/rocq-ext-lib/actions/workflows/docker-action.yml/badge.svg?branch=master
+[docker-action-link]: https://github.com/rocq-community/rocq-ext-lib/actions/workflows/docker-action.yml
 
 [contributing-shield]: https://img.shields.io/badge/contributions-welcome-%23f7931e.svg
 [contributing-link]: https://github.com/coq-community/manifesto/blob/master/CONTRIBUTING.md
@@ -23,39 +23,39 @@ Follow the instructions on https://github.com/coq-community/templates to regener
 [zulip-link]: https://coq.zulipchat.com/#narrow/stream/237663-coq-community-devs.20.26.20users
 
 [coqdoc-shield]: https://img.shields.io/badge/docs-coqdoc-blue.svg
-[coqdoc-link]: https://coq-community.org/coq-ext-lib
+[coqdoc-link]: https://coq-community.org/rocq-ext-lib
 
 
-A collection of theories and plugins that may be useful in other Coq developments.
+A collection of theories and plugins that may be useful in other Rocq developments.
 
 ## Meta
 
 - Author(s):
   - Gregory Malecha (initial)
-- Coq-community maintainer(s):
+- Rocq-community maintainer(s):
   - Gregory Malecha ([**@gmalecha**](https://github.com/gmalecha))
   - Yishuai Li ([**@liyishuai**](https://github.com/liyishuai))
 - License: [BSD 2-Clause "Simplified" License](LICENSE)
-- Compatible Coq versions: Coq 8.11 or later or 8.9
+- Compatible Rocq/Coq versions: Rocq 9.0 or later
 - Additional dependencies: none
-- Coq namespace: `ExtLib`
+- Rocq/Coq namespace: `ExtLib`
 - Related publication(s): none
 
 ## Building and installation instructions
 
-The easiest way to install the latest released version of coq-ext-lib
+The easiest way to install the latest released version of rocq-ext-lib
 is via [OPAM](https://opam.ocaml.org/doc/Install.html):
 
 ```shell
 opam repo add coq-released https://coq.inria.fr/opam/released
-opam install coq-ext-lib
+opam install rocq-ext-lib
 ```
 
 To instead build and install manually, do:
 
 ``` shell
-git clone --recurse-submodules https://github.com/coq-community/coq-ext-lib.git
-cd coq-ext-lib
+git clone --recurse-submodules https://github.com/rocq-community/rocq-ext-lib.git
+cd rocq-ext-lib
 make theories  # or make -j <number-of-cores-on-your-machine> theories
 make install
 ```

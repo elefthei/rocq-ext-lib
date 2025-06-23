@@ -1,5 +1,5 @@
-Require Import ExtLib.Data.Monads.IStateMonad.
-Require Import ExtLib.Structures.IXMonad.
+From ExtLib Require Import Data.Monads.IStateMonad.
+From ExtLib Require Import Structures.IXMonad.
 
 Section example.
 

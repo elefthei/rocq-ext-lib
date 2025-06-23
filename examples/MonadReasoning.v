@@ -1,7 +1,7 @@
-Require Import ExtLib.Structures.Monad.
-Require Import ExtLib.Structures.MonadLaws.
-Require Import ExtLib.Data.PreFun.
-Require Import ExtLib.Data.Fun.
+From ExtLib Require Import Structures.Monad.
+From ExtLib Require Import Structures.MonadLaws.
+From ExtLib Require Import Data.PreFun.
+From ExtLib Require Import Data.Fun.
 
 Set Implicit Arguments.
 Set Strict Implicit.

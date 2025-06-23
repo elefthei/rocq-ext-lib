@@ -1,4 +1,4 @@
-Require Import Coq.Bool.Bool.
+From Stdlib Require Import Bool.Bool.
 
 Set Implicit Arguments.
 Set Strict Implicit.

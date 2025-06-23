@@ -1,9 +1,9 @@
-Require Import ExtLib.Structures.Monads.
-Require Import ExtLib.Structures.Monoid.
-Require Import ExtLib.Data.PPair.
-Require Import ExtLib.Data.Monads.IdentityMonad.
+From ExtLib Require Import Structures.Monads.
+From ExtLib Require Import Structures.Monoid.
+From ExtLib Require Import Data.PPair.
+From ExtLib Require Import Data.Monads.IdentityMonad.
 
-Require Import Coq.Program.Basics. (* for (∘) *)
+Require Import Stdlib.Program.Basics. (* for (∘) *)
 
 Set Implicit Arguments.
 Set Maximal Implicit Insertion.

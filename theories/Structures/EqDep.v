@@ -1,7 +1,7 @@
-From Coq.Logic Require Eqdep_dec.
-Require EquivDec.
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Tactics.Consider.
+From Stdlib.Logic Require Eqdep_dec.
+From Stdlib Require EquivDec.
+From ExtLib Require Import Core.RelDec.
+From ExtLib Require Import Tactics.Consider.
 
 Set Implicit Arguments.
 Set Strict Implicit.

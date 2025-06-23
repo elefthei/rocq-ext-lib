@@ -1,5 +1,5 @@
-Require Import ExtLib.Structures.Monad.
-Require Import ExtLib.Structures.Monoid.
+From ExtLib Require Import Structures.Monad.
+From ExtLib Require Import Structures.Monoid.
 
 Set Universe Polymorphism.
 Set Printing Universes.

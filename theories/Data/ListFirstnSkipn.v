@@ -1,6 +1,6 @@
-From Coq.Lists Require Import List.
-From Coq.ZArith Require Import ZArith.
-From Coq.micromega Require Import Lia.
+From Stdlib Require Import Lists.List.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import Lia.
 
 (** For backwards compatibility with hint locality attributes. *)
 Set Warnings "-unsupported-attributes".

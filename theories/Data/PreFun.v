@@ -1,5 +1,5 @@
-From Coq.Classes Require Import Morphisms.
-From Coq.Relations Require Import Relations.
+From Stdlib.Classes Require Import Morphisms.
+From Stdlib.Relations Require Import Relations.
 
 Set Implicit Arguments.
 Set Strict Implicit.

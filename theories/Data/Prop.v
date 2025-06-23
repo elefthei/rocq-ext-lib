@@ -1,4 +1,4 @@
-From Coq Require Import Setoid.
+From Stdlib Require Import Setoid.
 
 (** NOTE: These should fit into a larger picture, e.g. lattices or monoids **)
 (** And/Conjunction **)

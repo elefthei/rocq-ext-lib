@@ -1,8 +1,8 @@
-Require Import ExtLib.Structures.Maps.
-Require Import ExtLib.Structures.Functor.
-Require Import ExtLib.Data.Option.
-Require Import ExtLib.Data.Positive.
-Require Import ExtLib.Tactics.Cases.
+From ExtLib Require Import Structures.Maps.
+From ExtLib Require Import Structures.Functor.
+From ExtLib Require Import Data.Option.
+From ExtLib Require Import Data.Positive.
+From ExtLib Require Import Tactics.Cases.
 
 Set Implicit Arguments.
 Set Strict Implicit.

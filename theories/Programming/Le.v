@@ -1,6 +1,6 @@
-Require Import Coq.Bool.Bool.
-Require Import Equivalence.
-Require Import ExtLib.Core.RelDec.
+From Stdlib Require Import Bool.Bool.
+From Stdlib Require Import Equivalence.
+From ExtLib Require Import RelDec.
 
 Class Lte T := { lte : T -> T -> Prop }.
 Definition neg_lte {T} {L:Lte T} (x:T) (y:T) : Prop := not (lte x y).

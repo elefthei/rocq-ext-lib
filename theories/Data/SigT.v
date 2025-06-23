@@ -1,7 +1,7 @@
-From Coq.Classes Require EquivDec.
-Require Import ExtLib.Structures.EqDep.
-Require Import ExtLib.Tactics.Injection.
-Require Import ExtLib.Tactics.EqDep.
+From Stdlib Require Import Classes.EquivDec.
+From ExtLib Require Import Structures.EqDep.
+From ExtLib Require Import Tactics.Injection.
+From ExtLib Require Import Tactics.EqDep.
 
 Set Implicit Arguments.
 Set Strict Implicit.

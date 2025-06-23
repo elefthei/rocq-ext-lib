@@ -1,5 +1,5 @@
-Require Import ExtLib.Structures.Monads.
-Require Import ExtLib.Structures.MonadLaws.
+From ExtLib Require Import Structures.Monads.
+From ExtLib Require Import Structures.MonadLaws.
 
 Set Implicit Arguments.
 Set Strict Implicit.

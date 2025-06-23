@@ -1,6 +1,6 @@
-Require Import RelationClasses.
-Require Import ExtLib.Structures.Monad.
-Require Import ExtLib.Structures.Reducible.
+From Stdlib Require Import RelationClasses.
+From ExtLib Require Import Structures.Monad.
+From ExtLib Require Import Structures.Reducible.
 
 Set Implicit Arguments.
 Set Strict Implicit.

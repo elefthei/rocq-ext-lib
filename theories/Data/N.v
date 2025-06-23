@@ -1,1 +1,1 @@
-Require Import BinPos.
+From Stdlib Require Import BinPos.

@@ -1,4 +1,4 @@
-Require Import ExtLib.Core.RelDec.
+From ExtLib Require Import Core.RelDec.
 
 Set Implicit Arguments.
 Set Strict Implicit.

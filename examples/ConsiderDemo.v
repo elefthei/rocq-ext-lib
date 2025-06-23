@@ -1,10 +1,10 @@
-From Coq Require Import Bool.
-From Coq Require Import PeanoNat.
-Require Import ExtLib.Tactics.Consider.
-Require Import ExtLib.Data.Nat.
+From Stdlib Require Import Bool.
+From Stdlib Require Import PeanoNat.
+From ExtLib Require Import Tactics.Consider.
+From ExtLib Require Import Data.Nat.
 
-From Coq Require Import ZArith.
-From Coq Require Import Lia.
+From Stdlib Require Import ZArith.
+From Stdlib Require Import Lia.
 
 Set Implicit Arguments.
 Set Strict Implicit.

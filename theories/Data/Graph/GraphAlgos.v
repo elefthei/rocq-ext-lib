@@ -1,12 +1,12 @@
-Require Import Coq.Lists.List.
-Require Import Coq.PArith.BinPos.
-Require Import ExtLib.Structures.Monads.
-Require Import ExtLib.Structures.Reducible.
-Require Import ExtLib.Data.Graph.Graph.
-Require Import ExtLib.Data.Monads.FuelMonad.
-Require Import ExtLib.Data.Monads.IdentityMonad.
-Require Import ExtLib.Data.List.
-Require Import ExtLib.Core.RelDec.
+Require Import Stdlib.Lists.List.
+Require Import Stdlib.PArith.BinPos.
+From ExtLib Require Import Structures.Monads.
+From ExtLib Require Import Structures.Reducible.
+From ExtLib Require Import Data.Graph.Graph.
+From ExtLib Require Import Data.Monads.FuelMonad.
+From ExtLib Require Import Data.Monads.IdentityMonad.
+From ExtLib Require Import Data.List.
+From ExtLib Require Import RelDec.
 
 
 Set Implicit Arguments.

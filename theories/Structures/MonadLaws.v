@@ -1,8 +1,7 @@
-Require Import Setoid.
-Require Import Coq.Classes.Morphisms.
-Require Import ExtLib.Structures.Monads.
-Require Import ExtLib.Data.Fun.
-Require Import ExtLib.Data.Unit.
+From Stdlib Require Import Setoid.
+From Stdlib Require Import Classes.Morphisms.
+From ExtLib Require Import Structures.Monads.
+From ExtLib Require Import Data.Fun.
 
 Set Implicit Arguments.
 Set Strict Implicit.

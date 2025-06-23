@@ -1,4 +1,4 @@
-Require Import ExtLib.Structures.Monad.
+From ExtLib Require Import Structures.Monad.
 
 Class MonadExc (E : Type) (m : Type -> Type) : Type :=
 { raise : forall {T}, E -> m T

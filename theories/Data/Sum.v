@@ -1,6 +1,6 @@
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Tactics.Consider.
-Require Import ExtLib.Tactics.Injection.
+From ExtLib Require Import RelDec.
+From ExtLib Require Import Tactics.Consider.
+From ExtLib Require Import Tactics.Injection.
 
 Set Implicit Arguments.
 Set Strict Implicit.

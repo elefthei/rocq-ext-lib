@@ -1,14 +1,14 @@
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Structures.Monads.
-Require Import ExtLib.Structures.Monoid.
-Require Import ExtLib.Structures.Reducible.
-Require Import ExtLib.Structures.Maps.
-Require Import ExtLib.Data.List.
-Require Import ExtLib.Data.PPair.
-Require Import ExtLib.Data.Monads.WriterMonad.
-Require Import ExtLib.Data.Monads.IdentityMonad.
-Require Import ExtLib.Data.Graph.Graph.
-Require Import ExtLib.Data.Graph.BuildGraph.
+From ExtLib Require Import RelDec.
+From ExtLib Require Import Structures.Monads.
+From ExtLib Require Import Structures.Monoid.
+From ExtLib Require Import Structures.Reducible.
+From ExtLib Require Import Structures.Maps.
+From ExtLib Require Import Data.List.
+From ExtLib Require Import Data.PPair.
+From ExtLib Require Import Data.Monads.WriterMonad.
+From ExtLib Require Import Data.Monads.IdentityMonad.
+From ExtLib Require Import Data.Graph.Graph.
+From ExtLib Require Import Data.Graph.BuildGraph.
 
 Set Implicit Arguments.
 Set Strict Implicit.

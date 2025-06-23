@@ -1,5 +1,5 @@
-Require Import Coq.Lists.List.
-Require Import ExtLib.Structures.Monoid.
+From Stdlib Require Import Lists.List.
+From ExtLib Require Import Structures.Monoid.
 
 Set Implicit Arguments.
 Set Strict Implicit.

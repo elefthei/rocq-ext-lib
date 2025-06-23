@@ -1,6 +1,6 @@
-Require Import Setoid.
-Require Import RelationClasses.
-Require Import Morphisms.
+From Stdlib Require Import Setoid.
+From Stdlib Require Import RelationClasses.
+From Stdlib Require Import Morphisms.
 
 Set Implicit Arguments.
 Set Strict Implicit.

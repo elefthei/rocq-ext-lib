@@ -1,5 +1,5 @@
-From Coq.Lists Require Import List.
-From Coq.Arith Require Import PeanoNat.
+From Stdlib.Lists Require Import List.
+From Stdlib.Arith Require Import PeanoNat.
 
 Set Implicit Arguments.
 Set Strict Implicit.

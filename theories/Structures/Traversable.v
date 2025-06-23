@@ -1,4 +1,4 @@
-Require Import ExtLib.Structures.Applicative.
+From ExtLib Require Import Structures.Applicative.
 
 Set Implicit Arguments.
 Set Maximal Implicit Insertion.

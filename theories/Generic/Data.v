@@ -1,7 +1,7 @@
-Require Import Coq.Lists.List.
-Require Import ExtLib.Data.Member.
-Require Import ExtLib.Data.HList.
-Require Import ExtLib.Generic.Func.
+From Stdlib Require Import Lists.List.
+From ExtLib Require Import Data.Member.
+From ExtLib Require Import Data.HList.
+From ExtLib Require Import Generic.Func.
 (** This module gives a representation of inductive types **)
 
 Set Implicit Arguments.

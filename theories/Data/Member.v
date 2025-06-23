@@ -1,12 +1,12 @@
 (** [member] is the proof relevant version of [In] **)
-Require Import Coq.Lists.List.
-Require Import Relations RelationClasses.
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Data.SigT.
-Require Import ExtLib.Data.ListNth.
-Require Import ExtLib.Data.Option.
-Require Import ExtLib.Tactics.Injection.
-Require Import ExtLib.Tactics.EqDep.
+From Stdlib Require Import Lists.List.
+From Stdlib Require Import Relations RelationClasses.
+From ExtLib Require Import Core.RelDec.
+From ExtLib Require Import Data.SigT.
+From ExtLib Require Import Data.ListNth.
+From ExtLib Require Import Data.Option.
+From ExtLib Require Import Tactics.Injection.
+From ExtLib Require Import Tactics.EqDep.
 
 Set Implicit Arguments.
 Set Strict Implicit.

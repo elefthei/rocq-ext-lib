@@ -1,6 +1,6 @@
-Require Import ExtLib.Structures.Functor.
-Require Import ExtLib.Structures.Applicative.
-Require Import ExtLib.Tactics.Injection.
+From ExtLib Require Import Structures.Functor.
+From ExtLib Require Import Structures.Applicative.
+From ExtLib Require Import Tactics.Injection.
 
 Set Universe Polymorphism.
 Set Printing Universes.

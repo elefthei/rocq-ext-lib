@@ -1,19 +1,18 @@
-Require Import Coq.Classes.RelationClasses.
-Require Import Coq.Lists.List.
-Require Import ExtLib.Core.RelDec.
-Require Import ExtLib.Tactics.Consider.
-Require Import ExtLib.Structures.Maps.
-Require Import ExtLib.Structures.Monad.
-Require Import ExtLib.Structures.Reducible.
-Require Import ExtLib.Structures.Functor.
-From Coq Require Import
+Require Import Stdlib.Classes.RelationClasses.
+Require Import Stdlib.Lists.List.
+From ExtLib Require Import RelDec.
+From ExtLib Require Import Tactics.Consider.
+From ExtLib Require Import Structures.Maps.
+From ExtLib Require Import Structures.Monad.
+From ExtLib Require Import Structures.Reducible.
+From ExtLib Require Import Structures.Functor.
+From Stdlib Require Import
      Basics.
 From ExtLib Require Import
      Extras
      OptionMonad.
-Import
-  FunNotation
-  FunctorNotation.
+Import FunNotation FunctorNotation.
+
 Open Scope program_scope.
 
 Set Implicit Arguments.
@@ -74,7 +73,7 @@ Section keyed.
       end.
 
     Definition fold_alist' : T -> alist -> T :=
-      flip $ fold_left (flip $ uncurry f).
+      flip $ fold_left (fun acc '(k,v) => f k v acc).
 
     Lemma fold_alist_alt (map: alist) : forall acc: T,
         fold_alist acc map = fold_alist' acc map.

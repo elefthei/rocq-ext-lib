@@ -1,6 +1,6 @@
 (** The Reader Monad Class
  **)
-Require Import ExtLib.Structures.Monad.
+From ExtLib Require Import Structures.Monad.
 
 Set Universe Polymorphism.
 Set Printing Universes.
