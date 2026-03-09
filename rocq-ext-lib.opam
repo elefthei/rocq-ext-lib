@@ -19,7 +19,7 @@ build: [make "-j%{jobs}%" "theories"]
 run-test: [make "-j%{jobs}%" "examples"]
 install: [make "install"]
 depends: [
-  "coq" { >= "9.0" }
+  "coq" { >= "9.1" }
 ]
 
 tags: [
