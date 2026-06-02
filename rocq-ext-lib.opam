@@ -19,7 +19,8 @@ build: [make "-j%{jobs}%" "theories"]
 run-test: [make "-j%{jobs}%" "examples"]
 install: [make "install"]
 depends: [
-  "coq" { >= "9.1" }
+  "rocq-core" { = "9.1.1" }
+  "rocq-stdlib"
 ]
 
 tags: [

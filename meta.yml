@@ -29,11 +29,19 @@ license:
   identifier: BSD-2-Clause
 
 supported_coq_versions:
-  text: Rocq 9.0 or later
-  opam: '{ >= "9.0" }'
+  text: Rocq 9.1.1
+
+dependencies:
+- opam:
+    name: rocq-core
+    version: '{ = "9.1.1" }'
+  description: Rocq Core 9.1.1
+- opam:
+    name: rocq-stdlib
+  description: Rocq standard library
 
 tested_rocq_opam_versions:
-  - version: '9.0'
+  - version: '9.1.1'
 
 make_target: theories
 test_target: examples

@@ -36,8 +36,8 @@ A collection of theories and plugins that may be useful in other Rocq developmen
   - Gregory Malecha ([**@gmalecha**](https://github.com/gmalecha))
   - Yishuai Li ([**@liyishuai**](https://github.com/liyishuai))
 - License: [BSD 2-Clause "Simplified" License](LICENSE)
-- Compatible Rocq/Coq versions: Rocq 9.0 or later
-- Additional dependencies: none
+- Compatible Rocq/Coq versions: Rocq 9.1.1
+- Additional dependencies: rocq-core 9.1.1, rocq-stdlib
 - Rocq/Coq namespace: `ExtLib`
 - Related publication(s): none
 
@@ -47,7 +47,7 @@ The easiest way to install the latest released version of rocq-ext-lib
 is via [OPAM](https://opam.ocaml.org/doc/Install.html):
 
 ```shell
-opam repo add coq-released https://coq.inria.fr/opam/released
+opam repo add rocq-released https://rocq-prover.org/opam/released
 opam install rocq-ext-lib
 ```
 

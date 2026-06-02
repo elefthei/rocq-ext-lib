@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         image:
-          - 'rocq/rocq-prover:9.0'
+          - 'rocq/rocq-prover:9.1.1'
       fail-fast: false
     steps:
       - uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
           custom_image: ${{ matrix.image }}
           before_install: |
             startGroup "Setup and print opam config"
-              opam repo -a --set-default add coq-extra-dev https://coq.inria.fr/opam/extra-dev
+              opam repo -a --set-default add rocq-extra-dev https://rocq-prover.org/opam/extra-dev
               opam config list; opam repo list; opam list
             endGroup
           after_script: |
