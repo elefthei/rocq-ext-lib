@@ -4,11 +4,15 @@ COQDOCJS_LN?=true
 -include coqdocjs/Makefile.doc
 COQMAKEFILE?=Makefile.coq
 
+# Rocq 9.1 renamed `coq_makefile` to `rocq makefile`. Prefer the legacy
+# binary when present, otherwise fall back to the new subcommand.
+COQ_MAKEFILE?=$(shell if command -v $(COQBIN)coq_makefile >/dev/null 2>&1; then echo '$(COQBIN)coq_makefile'; else echo '$(COQBIN)rocq makefile'; fi)
+
 theories: $(COQMAKEFILE)
 	$(MAKE) -f $(COQMAKEFILE)
 
 $(COQMAKEFILE):
-	$(COQBIN)coq_makefile -f _CoqProject -o $(COQMAKEFILE)
+	$(COQ_MAKEFILE) -f _CoqProject -o $(COQMAKEFILE)
 
 install: $(COQMAKEFILE)
 	$(MAKE) -f $(COQMAKEFILE) install

@@ -6,4 +6,4 @@ clean:
 	rm -f Makefile.coq Makefile.coq.conf
 
 Makefile.coq: Makefile _CoqProject
-	$(COQBIN)coq_makefile -f _CoqProject -o Makefile.coq
+	$(shell if command -v $(COQBIN)coq_makefile >/dev/null 2>&1; then echo '$(COQBIN)coq_makefile'; else echo '$(COQBIN)rocq makefile'; fi) -f _CoqProject -o Makefile.coq
